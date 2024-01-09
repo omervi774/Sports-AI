@@ -4,6 +4,7 @@ const style = {
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
+    height: "6rem",
   },
   itemsWrapper: {
     display: "flex",

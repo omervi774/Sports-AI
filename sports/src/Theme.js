@@ -2,7 +2,7 @@ import { createTheme } from "@mui/material/styles";
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#3498db",
+      main: "#e0e0d1 ",
       light: "#ecf0f1",
     },
     secondary: {
@@ -21,6 +21,14 @@ const theme = createTheme({
             border: "2px solid #bdc3c7",
             borderRadius: "3px",
           },
+        },
+      },
+    },
+    MuiCard: {
+      styleOverrides: {
+        root: {
+          backgroundColor: "#2c3e50",
+          borderRadius: "10px",
         },
       },
     },

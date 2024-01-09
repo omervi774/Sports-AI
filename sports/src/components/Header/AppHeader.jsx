@@ -5,12 +5,12 @@ import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import { useNavigate } from "react-router-dom";
 import { Box, ListItemText, Tooltip, Typography } from "@mui/material";
-import style from "./styles/sheaderStyle";
+import style from "./styles/headerStyle";
 
 export default function AppHeader() {
   const navigate = useNavigate();
   return (
-    <List>
+    <List sx={{ margin: 0, padding: 0 }}>
       <Box sx={style.wrapper}>
         <Typography
           variant="h2"
@@ -27,13 +27,10 @@ export default function AppHeader() {
             return (
               <Tooltip
                 title={`${url}${item.route}`}
+                key={item.id}
                 // sx={{ position: "absolute", bottom: "0", right: "0" }}
               >
-                <ListItem
-                  sx={style.item}
-                  key={item.id}
-                  onClick={() => navigate(item.route)}
-                >
+                <ListItem sx={style.item} onClick={() => navigate(item.route)}>
                   <ListItemText primary={item.label} />
                 </ListItem>
               </Tooltip>

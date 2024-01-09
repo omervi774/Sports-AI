@@ -6,15 +6,20 @@ import theme from "./Theme";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "@emotion/react";
+import WorkOut from "./pages/WorkOut";
+import About from "./pages/About/About";
+import Home from "./pages/Home/Home";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
   <ThemeProvider theme={theme}>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />}>
-          <Route path="workoutPlan" element={<h1> workout</h1>} />
-          <Route path="about" element={<h1> about</h1>} />
+          <Route index element={<Home />} />
+          <Route path="workoutPlan" element={<WorkOut />} />
+          <Route path="about" element={<About />} />
           <Route />
         </Route>
       </Routes>
