@@ -5,6 +5,7 @@ import { aboutStyle } from "../HomeAndAbout/mutalStyle";
 import { CardContent } from "@mui/material";
 import AppText from "../../components/AppText";
 import { items } from "./consts";
+import AppFooter from "../../components/Footer/AppFooter";
 function About() {
   const navigate = useNavigate();
   function hanlePress() {
@@ -38,20 +39,7 @@ function About() {
         buttonAction={hanlePress}
         imgStyle={aboutStyle.aboutImgWrapper}
       />
-      <div>
-        fdfds
-        <br />
-        fdfds
-        <br />
-        fdfds
-        <br />
-        fdfds
-        <br />
-        fdfds
-        <br />
-        fdfds
-        <br />
-      </div>
+      <AppFooter />
     </>
   );
 }

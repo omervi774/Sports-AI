@@ -5,6 +5,8 @@ import ExerciseInfoCard from "../../components/ExerciseInfoCard";
 import { homeStyle } from "../HomeAndAbout/mutalStyle";
 import { CardContent } from "@mui/material";
 import AppText from "../../components/AppText";
+import { Box } from "@mui/material";
+import AppFooter from "../../components/Footer/AppFooter";
 function Home() {
   const navigate = useNavigate();
   function hanlePress() {
@@ -29,13 +31,16 @@ function Home() {
     );
   }
   return (
-    <ExerciseInfoCard
-      warpperStyle={homeStyle.wrapper}
-      cardStyle={{ height: "50%", width: "100%" }}
-      cardContent={cardContent()}
-      buttonAction={hanlePress}
-      imgStyle={homeStyle.homeImgWrapper}
-    />
+    <Box sx={{ display: "flex", flexDirection: "column" }}>
+      <ExerciseInfoCard
+        warpperStyle={homeStyle.wrapper}
+        cardStyle={{ height: "50%", width: "100%" }}
+        cardContent={cardContent()}
+        buttonAction={hanlePress}
+        imgStyle={homeStyle.homeImgWrapper}
+      />
+      <AppFooter />
+    </Box>
   );
 }
 
