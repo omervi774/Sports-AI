@@ -1,15 +1,15 @@
 import { createTheme } from "@mui/material/styles";
 const theme = createTheme({
-  palette: {
-    primary: {
-      main: "#e0e0d1 ",
-      light: "#ecf0f1",
-    },
-    secondary: {
-      main: "#2c3e50",
-      light: "#white",
-    },
-  },
+  // palette: {
+  //   primary: {
+  //     main: "#e0e0d1 ",
+  //     light: "#ecf0f1",
+  //   },
+  //   secondary: {
+  //     main: "#2c3e50",
+  //     light: "#white",
+  //   },
+  // },
   components: {
     MuiListItem: {
       styleOverrides: {

@@ -1,6 +1,6 @@
 const style = {
   wrapper: {
-    bgcolor: "secondary.main",
+    bgcolor: "#2c3e50",
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",

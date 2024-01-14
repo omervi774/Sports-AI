@@ -1,7 +1,7 @@
 export const footerStyle = {
   warpper: {
     display: "flex",
-    bgcolor: "secondary.main",
+    bgcolor: "#2c3e50",
     height: "12rem",
     alignItems: "center",
     justifyContent: "space-around",
